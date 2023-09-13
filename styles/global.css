@@ -1,0 +1,205 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  /* Colors */
+  --white-label-primary: rgba(0, 69, 243, 1);
+  --brand-color-black: rgba(10, 33, 86, 1);
+  --brand-color-blue: rgba(64, 112, 244, 1);
+  --brand-color-green: rgba(43, 214, 123, 1);
+
+  --transparent-00: rgba(255, 255, 255, 0.08);
+  --graygray-00: rgba(255, 255, 255, 1);
+  --graygray-05: rgba(246, 246, 246, 1);
+  --graygray-10: rgba(231, 233, 237, 1);
+  --graygray-100: rgba(11, 31, 77, 1);
+  --graygray-20: rgba(206, 210, 219, 1);
+  --graygray-30: rgba(182, 188, 201, 1);
+  --graygray-40: rgba(158, 165, 184, 1);
+  --graygray-50: rgba(133, 143, 166, 1);
+  --graygray-60: rgba(109, 121, 148, 1);
+  --graygray-70: rgba(85, 98, 130, 1);
+  --graygray-80: rgba(60, 76, 112, 1);
+  --graygray-90: rgba(36, 54, 94, 1);
+
+  --supportsupport-01: rgba(64, 112, 244, 1);
+  --supportsupport-02: rgba(11, 176, 123, 1);
+  --supportsupport-03: rgba(255, 173, 13, 1);
+  --supportsupport-04: rgba(240, 61, 61, 1);
+  --supportsupport-05: rgba(60, 76, 112, 1);
+  --light-black: rgba(23, 25, 28, 1);
+  --light-green: rgba(0, 145, 158, 1);
+
+  /* Shadows */
+  --shadow-l: 0px 8px 16px 0px rgba(11, 31, 77, 0.12);
+  --shadow-m: 0px 4px 8px 0px rgba(11, 31, 77, 0.1);
+  --shadow-s: 0px 2px 4px 0px rgba(11, 31, 77, 0.08);
+  --shadow-xl: 0px 12px 24px 0px rgba(11, 31, 77, 0.14);
+  --shadow-xxl: 0px 16px 32px 0px rgba(11, 31, 77, 0.16);
+
+  /* Font styles */
+  --display-font-family: "CircularStd-Bold", Helvetica;
+  --display-font-size: 55px;
+  --display-font-style: normal;
+  --display-font-weight: 700;
+  --display-letter-spacing: -1.1px;
+  --display-line-height: 55px;
+
+  --heading-1-font-family: "CircularStd-Bold", Helvetica;
+  --heading-1-font-size: 40px;
+  --heading-1-font-style: normal;
+  --heading-1-font-weight: 700;
+  --heading-1-letter-spacing: -0.8px;
+  --heading-1-line-height: 45px;
+
+  --heading-2-font-family: "CircularStd-Bold", Helvetica;
+  --heading-2-font-size: 24px;
+  --heading-2-font-style: normal;
+  --heading-2-font-weight: 700;
+  --heading-2-letter-spacing: -0.24px;
+  --heading-2-line-height: 30px;
+
+  --heading-3-font-family: "CircularStd-Medium", Helvetica;
+  --heading-3-font-size: 22px;
+  --heading-3-font-style: normal;
+  --heading-3-font-weight: 500;
+  --heading-3-letter-spacing: 0px;
+  --heading-3-line-height: 30px;
+
+  --paragraph-1-font-family: "CircularStd-Book", Helvetica;
+  --paragraph-1-font-size: 20px;
+  --paragraph-1-font-style: normal;
+  --paragraph-1-font-weight: 400;
+  --paragraph-1-letter-spacing: 0px;
+  --paragraph-1-line-height: 26px;
+
+  --paragraph-2-font-family: "CircularStd-Book", Helvetica;
+  --paragraph-2-font-size: 16px;
+  --paragraph-2-font-style: normal;
+  --paragraph-2-font-weight: 400;
+  --paragraph-2-letter-spacing: 0px;
+  --paragraph-2-line-height: 22px;
+
+  --paragraph-22-font-family: "CircularStd-Bold", Helvetica;
+  --paragraph-22-font-size: 16px;
+  --paragraph-22-font-style: normal;
+  --paragraph-22-font-weight: 700;
+  --paragraph-22-letter-spacing: 0px;
+  --paragraph-22-line-height: 22px;
+
+  --paragraph-3-font-family: "CircularStd-Book", Helvetica;
+  --paragraph-3-font-size: 14px;
+  --paragraph-3-font-style: normal;
+  --paragraph-3-font-weight: 400;
+  --paragraph-3-letter-spacing: 0px;
+  --paragraph-3-line-height: 18px;
+
+  --paragraph-4-font-family: "CircularStd-Book", Helvetica;
+  --paragraph-4-font-size: 12px;
+  --paragraph-4-font-style: normal;
+  --paragraph-4-font-weight: 400;
+  --paragraph-4-letter-spacing: 0px;
+  --paragraph-4-line-height: 16px;
+}
+
+@font-face {
+  font-family: "CircularStd-Book";
+  src: url('../assets/CircularStd/CircularStd-Book.ttf');
+}
+
+@font-face {
+  font-family: "CircularStd-Bold";
+  src: url('../assets/CircularStd/CircularStd-Bold.ttf');
+}
+
+@font-face {
+  font-family: "CircularStd-Medium";
+  src: url('../assets/CircularStd/CircularStd-Medium.ttf');
+}
+
+@layer base {
+  h2 {
+    font-family: var(--heading-3-font-family);
+    font-size: var(--heading-3-font-size);
+    font-style: var(--heading-3-font-style);
+    font-weight: var(--heading-3-font-weight);
+    line-height: var(--heading-3-line-height);
+    color: var(--brand-color-blue);
+  }
+  h3 {
+    font-family: var(--heading-3-font-family);
+    font-size: var(--heading-3-font-size);
+    font-style: var(--heading-3-font-style);
+    font-weight: var(--heading-3-font-weight);
+    line-height: var(--heading-3-line-height);
+    color: var(--brand-color-black);
+  }
+}
+
+@layer components {
+  .p2 {
+    font-family: var(--paragraph-2-font-family);
+    font-size: var(--paragraph-2-font-size);
+    font-weight: var(--paragraph-2-font-weight);
+    line-height: var(--paragraph-2-line-height);
+  }
+  .p3 {
+    font-family: var(--paragraph-3-font-family);
+    font-size: var(--paragraph-3-font-size);
+    font-weight: var(--paragraph-3-font-weight);
+    line-height: var(--paragraph-3-line-height);
+  }
+  .p4 {
+    font-family: var(--paragraph-4-font-family);
+    font-size: var(--paragraph-4-font-size);
+    font-weight: var(--paragraph-4-font-weight);
+    line-height: var(--paragraph-4-line-height);
+  }
+  .p22 {
+    font-family: var(--paragraph-22-font-family);
+    font-size: var(--paragraph-22-font-size);
+    font-weight: var(--paragraph-22-font-weight);
+  }
+}
+
+/* Scrollbar */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+a {
+  color: #0070f3;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
