@@ -110,17 +110,17 @@ html,
 
 @font-face {
   font-family: "CircularStd-Book";
-  src: url('../assets/CircularStd/CircularStd-Book.ttf');
+  src: url("../assets/CircularStd/CircularStd-Book.ttf");
 }
 
 @font-face {
   font-family: "CircularStd-Bold";
-  src: url('../assets/CircularStd/CircularStd-Bold.ttf');
+  src: url("../assets/CircularStd/CircularStd-Bold.ttf");
 }
 
 @font-face {
   font-family: "CircularStd-Medium";
-  src: url('../assets/CircularStd/CircularStd-Medium.ttf');
+  src: url("../assets/CircularStd/CircularStd-Medium.ttf");
 }
 
 @layer base {
